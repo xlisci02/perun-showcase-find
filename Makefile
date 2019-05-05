@@ -1,7 +1,7 @@
-all: vector
+all: list
 
-vector: vector.cc
-	g++ -g --coverage vector.cc -o vector
+list: list.cc
+	g++ -g --coverage list.cc -o list
 
 clean:
-	rm -rf vector *.gc* 
+	rm -rf list *.gc* 
