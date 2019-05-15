@@ -13,6 +13,9 @@ time ./list worst-case-muts/worst_case22.txt
 # to fuzz, first initialize as perun repo
 perun init --vsc-type=git --configure
 
+# create output directory for fuzzing
+mkdir output
+
 # fuzz example
 perun fuzz -b ./list -w seed2.txt -o output -t 900 -mp 2 -mcs probabilistic -cr 2 
 ```
