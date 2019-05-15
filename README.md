@@ -36,4 +36,4 @@ In case your identity is not defined, set your user name and email address like 
 The command for launching the fuzzing machine can look similar to this:
 
     mkdir output
-    perun fuzz -b ./list -w seed2.txt -o output -t 900 -mp 2 -mcs probabilistic -cr 2 
+    perun fuzz -b ./list -w seed2.txt -o output -t 900 -mp 2 -mcs probabilistic -cr 2 -s . -g .
