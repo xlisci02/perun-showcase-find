@@ -21,8 +21,18 @@ Notice the time difference between the runtime with initial seed and its mutatio
 Run the following and close the configuration file that pops up:
 
 	perun init --vcs-type=git --configure
+	
+## Make sure your account's default identity is set
+Run the following command to check your git settings:
 
-## Create output directory and start fuzz
+	git config --list --show-origin
+
+In case your identity is not defined, set your user name and email address like this
+
+	git config user.email "you@example.com"
+	git config user.name "Your Name"
+
+## Finally, create output directory and start fuzz
 The command for launching the fuzzing machine can look similar to this:
 
     mkdir output
