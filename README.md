@@ -27,7 +27,7 @@ Run the following command to check your git settings:
 
 	git config --list --show-origin
 
-In case your identity is not defined, set your user name and email address like this
+In case your identity is not defined, set your user name and email address like this:
 
 	git config user.email "you@example.com"
 	git config user.name "Your Name"
