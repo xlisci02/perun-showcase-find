@@ -17,16 +17,6 @@ int main (int argc, char ** argv)
 	if (!file.is_open()) return 0;
 
 	std::string word;
-	// while(file >> word){
-	// 	std::list<std::string>::iterator it;
-	// 	if(mylist.size())
-	// 		it = std::next(mylist.begin(), rand()%mylist.size());
- //        else
- //        	it = mylist.begin();
- //        mylist.insert (it, word);
-	// }
-
-	
 	while (file >> word){
 		mylist.push_back(word);
 	}
@@ -34,7 +24,7 @@ int main (int argc, char ** argv)
 	file.clear();
 	file.seekg(0, std::ios::beg);
 
-    std::list<std::string>::iterator it;
+	std::list<std::string>::iterator it;
 
 	while (file >> word){
 		it = std::find (mylist.begin(), mylist.end(), word );
